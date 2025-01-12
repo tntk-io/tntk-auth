@@ -1,3 +1,4 @@
+![TNTK DevOps Logo](assets/tntk_devops.png)
 # TNTK Auth Module
 
 Welcome to the `tntk-auth` repository! This module is part of the Tentek infrastructure and is responsible for handling authentication and user management within the system. It is built using Python and FastAPI, and it leverages Docker for containerization and Helm for Kubernetes deployment.
