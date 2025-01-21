@@ -24,7 +24,7 @@ env:
 
 jobs:
   build-tag-push:
-    runs-on: gha-runner-scale-set-${{ vars.APPLICATION_NAME }}
+    runs-on: tntk-auth
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -70,7 +70,7 @@ jobs:
           docker push $REGISTRY/$REPOSITORY:$STAGE_TAG
           docker push $REGISTRY/$REPOSITORY:latest
   manifest-updates:
-    runs-on: gha-runner-scale-set-${{ vars.APPLICATION_NAME }}
+    runs-on: tntk-auth
     needs: build-tag-push
     steps:
       - name: Checkout Helm chart repository
