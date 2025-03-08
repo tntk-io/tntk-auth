@@ -6,9 +6,10 @@ from sqlalchemy.orm import Session
 from starlette import status
 
 from auth import schemas, crud
-from auth.utils import verify_password, create_access_token
 from root.database import get_db
 from root.models import User
+from auth.utils import verify_password, create_access_token
+
 
 db_dependency = Annotated[Session, Depends(get_db)]
 router = APIRouter(

@@ -7,7 +7,7 @@ from root.database import Base
 # user
 class User(Base):
     __tablename__ = 'users'
-    id = Column(Integer, primary_key=True, index=True)
+    id = Column(Integer, primary_key=True, index=True, autoincrement=True)
     email = Column(String)
     name = Column(String)
     password = Column(String)

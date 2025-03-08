@@ -1,5 +1,6 @@
-from root.rabbitmq import RabbitMQClient
-from root.config import settings
+from rabbitmq import RabbitMQClient
+from config import settings
+
 
 def get_order_rabbitmq_client():
     return RabbitMQClient(host=settings.RABBITMQ_HOST, queue='order_queue')

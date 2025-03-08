@@ -10,5 +10,6 @@ WORKDIR /code
 COPY --from=build /usr/local/ /usr/local/
 COPY src/ .
 
+
 CMD ["python3", "-m", "uvicorn", "auth.main:app", "--host=0.0.0.0", "--reload"]
 

@@ -18,7 +18,7 @@ class UserUpdate(BaseModel):
 
 
 class User(UserBase):
-    id: int
+    id: Optional[int] = None
 
     class Config:
         orm_mode = True

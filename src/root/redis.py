@@ -1,5 +1,6 @@
 import redis
-from root.config import settings
+from config import settings
+
 
 class RedisClient:
     def __init__(self, host: str, port: int, db: int = 0):

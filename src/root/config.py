@@ -11,6 +11,7 @@ class Settings(BaseSettings):
     SECRET_KEY: str
     REDIS_HOST: str
     RABBITMQ_HOST: str
+
     class Config:
         env_file = ".env"
 
